@@ -128,5 +128,31 @@ https://github.com/DegtyarevAO/shvirtd-example-python
 
 <img width="1226" height="490" alt="image" src="https://github.com/user-attachments/assets/d50a3028-9cc5-4738-a5ef-4fe32ed32da0" />
 
+# UPDATE 01/09/2025
+
+переустановил [отсюда:](https://lindevs.com/install-dive-on-ubuntu)  https://lindevs.com/install-dive-on-ubuntu
+
+#### сотрим состав образа в dive
+
+dive hashicorp/terraform
+
+<img width="3326" height="1750" alt="image" src="https://github.com/user-attachments/assets/271caa64-22f0-44bc-983e-d60296901060" />
+
+#### достаем файл 
+
+docker save ce1d68d88f5e | tar -tvf -
+
+docker save ce1d68d88f5e | tar -xf - -O blobs/sha256/43837e4684d82899a48cea14ccf6df3cd85083f00d1b96290dc25a2575c33f49 | tar -tv
+
+docker save ce1d68d88f5e | tar -xf - -O blobs/sha256/43837e4684d82899a48cea14ccf6df3cd85083f00d1b96290dc25a2575c33f49 | tar -xf - bin/terraform
+
+<img width="2756" height="1246" alt="image" src="https://github.com/user-attachments/assets/77b4eba2-12c9-4fa1-aebc-c3e0835faf9c" />
+
+
+## задание 6.1
+
+<img width="2000" height="604" alt="image" src="https://github.com/user-attachments/assets/3937a655-c783-4f1b-9701-080bd018f9eb" />
+
+
 
 
